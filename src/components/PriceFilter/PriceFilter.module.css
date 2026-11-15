@@ -7,7 +7,8 @@
 }
 
 .priceTitle {
-    color: rgba(0, 0, 0, 0.8);
+      color: var(--text-color);
+
     position: absolute;
     top: 0px;
     left: 10px;
@@ -38,7 +39,8 @@ outline: 1px solid rgb(0, 0, 0);
 }
 
 .priceSpan {
-    color: rgba(0, 0, 0, 0.8);
+     color: var(--text-color);
+
 }
 
 .line {

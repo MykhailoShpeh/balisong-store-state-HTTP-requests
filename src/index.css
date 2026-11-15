@@ -46,7 +46,13 @@
   --hover-background: #9fb9a5;
   --info-color: #c8cec9;
   --info-button: white;
-  --select-color: white; 
+  --select-color: white;
+  --select-text: #1a1f25;
+  --select-border: #d5d9e0;
+  --select-hover: #b8bec8;
+  --form-color: #f1f3f5;
+  --label-color: #667085;
+  --label-hover: #1a1f25;
 }
 
 [data-theme="dark"] {
@@ -67,8 +73,13 @@
   --hover-text: #c5ecd9;
   --hover-background: #9fb9a5;
   --info-color: #2f2f34;
-    --info-button: lightblue;
---select-color: gray; 
+  --info-button: lightblue;
+  --select-color: rgba(36, 36, 36);
+  --select-text: #ebefec;
+  --select-border: #222921;
+  --form-color: #1c1d1c;
+  --label-color: #dfe5f2;
+  --label-hover: #a5bfde;
 }
 
 a {

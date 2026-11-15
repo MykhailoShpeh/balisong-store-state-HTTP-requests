@@ -114,3 +114,7 @@
 .themeButton {
     cursor: pointer;
 }
+
+.icon {
+    color: var(--text-color);
+}
