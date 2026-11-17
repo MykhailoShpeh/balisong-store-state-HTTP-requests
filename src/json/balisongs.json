@@ -5,7 +5,7 @@
         "brand": "ARMED SHARK",
         "price": 218,
         "typeOfKnife": "trainer",
-        "image": "/balisong-store-state/1.png",
+        "image": "/balisong-store-state-HTTP-requests/1.png",
         "materials": [
             "440C Steel,",
             "Titanium"
@@ -14,10 +14,10 @@
         "weight": 123,
         "accessories": "Practice trainer, Repair kit, Pouch, Presentation box, Flipping tutorial",
         "photos": [
-            "/balisong-store-state/photos/armed-shark-ck-sr/armed-shark-ck-sr.webp",
-            "/balisong-store-state/photos/armed-shark-ck-sr/armed-shark-ck-sr-2.webp",
-            "/balisong-store-state/photos/armed-shark-ck-sr/armed-shark-ck-sr-3.webp",
-            "/balisong-store-state/photos/armed-shark-ck-sr/armed-shark-ck-sr-4.webp"
+            "/balisong-store-state-HTTP-requests/photos/armed-shark-ck-sr/armed-shark-ck-sr.webp",
+            "/balisong-store-state-HTTP-requests/photos/armed-shark-ck-sr/armed-shark-ck-sr-2.webp",
+            "/balisong-store-state-HTTP-requests/photos/armed-shark-ck-sr/armed-shark-ck-sr-3.webp",
+            "/balisong-store-state-HTTP-requests/photos/armed-shark-ck-sr/armed-shark-ck-sr-4.webp"
         ],
         "model": {
             "CK-DR": 999,
@@ -31,7 +31,7 @@
         "brand": "BBKS",
         "price": 25,
         "typeOfKnife": "trainer",
-        "image": "/balisong-store-state/2.png",
+        "image": "/balisong-store-state-HTTP-requests/2.png",
         "materials": [
             "6061 Aluminium"
         ],
@@ -39,10 +39,10 @@
         "weight": 110,
         "accessories": "Repair kit, Pouch",
         "photos": [
-            "/balisong-store-state/photos/touch-times-kraken-trainer/touch-times-kraken-trainer1.avif",
-            "/balisong-store-state/photos/touch-times-kraken-trainer/touch-times-kraken-trainer2.avif",
-            "/balisong-store-state/photos/touch-times-kraken-trainer/touch-times-kraken-trainer3.avif",
-            "/balisong-store-state/photos/touch-times-kraken-trainer/touch-times-kraken-trainer4.png"
+            "/balisong-store-state-HTTP-requests/photos/touch-times-kraken-trainer/touch-times-kraken-trainer1.avif",
+            "/balisong-store-state-HTTP-requests/photos/touch-times-kraken-trainer/touch-times-kraken-trainer2.avif",
+            "/balisong-store-state-HTTP-requests/photos/touch-times-kraken-trainer/touch-times-kraken-trainer3.avif",
+            "/balisong-store-state-HTTP-requests/photos/touch-times-kraken-trainer/touch-times-kraken-trainer4.png"
         ],
         "model": {
             "Black": 999,
@@ -57,7 +57,7 @@
         "brand": "Squid Industries",
         "price": 50,
         "typeOfKnife": "trainer",
-        "image": "/balisong-store-state/3.png",
+        "image": "/balisong-store-state-HTTP-requests/3.png",
         "materials": [
             "CPVC (Plastic)"
         ],
@@ -65,10 +65,10 @@
         "weight": 70.8,
         "accessories": false,
         "photos": [
-            "/balisong-store-state/3.png",
-            "/balisong-store-state/photos/squiddy/squiddy.webp",
-            "/balisong-store-state/photos/squiddy/squiddy-2.webp",
-            "/balisong-store-state/photos/squiddy/squiddy-3.webp"
+            "/balisong-store-state-HTTP-requests/3.png",
+            "/balisong-store-state-HTTP-requests/photos/squiddy/squiddy.webp",
+            "/balisong-store-state-HTTP-requests/photos/squiddy/squiddy-2.webp",
+            "/balisong-store-state-HTTP-requests/photos/squiddy/squiddy-3.webp"
         ],
         "model": {
             "main": 999
@@ -80,7 +80,7 @@
         "brand": "NABALIS",
         "price": 120,
         "typeOfKnife": "trainer",
-        "image": "/balisong-store-state/hydra.webp",
+        "image": "/balisong-store-state-HTTP-requests/hydra.webp",
         "materials": [
             "7075 Aluminum,",
             "440C Steel"
@@ -89,10 +89,10 @@
         "weight": 115,
         "accessories": "ghost stand",
         "photos": [
-            "/balisong-store-state/photos/hydra/hydra-trainer.webp",
-            "/balisong-store-state/photos/hydra/hydra-2.webp",
-            "/balisong-store-state/photos/hydra/hydra-3.webp",
-            "/balisong-store-state/photos/hydra/hydra-4.webp"
+            "/balisong-store-state-HTTP-requests/photos/hydra/hydra-trainer.webp",
+            "/balisong-store-state-HTTP-requests/photos/hydra/hydra-2.webp",
+            "/balisong-store-state-HTTP-requests/photos/hydra/hydra-3.webp",
+            "/balisong-store-state-HTTP-requests/photos/hydra/hydra-4.webp"
         ],
         "model": {
             "BurgundyBlack": 999,
@@ -106,7 +106,7 @@
         "brand": "Glidr",
         "price": 135,
         "typeOfKnife": "trainer",
-        "image": "/balisong-store-state/glidr-moab.webp",
+        "image": "/balisong-store-state-HTTP-requests/glidr-moab.webp",
         "materials": [
             "7075 Aluminum,",
             "Hardened 420 stainless steel"
@@ -115,10 +115,10 @@
         "weight": 114,
         "accessories": "Secondary parts",
         "photos": [
-            "/balisong-store-state/photos/moab-meridian/moab-meridian.webp",
-            "/balisong-store-state/photos/moab-meridian/moab-meridian-3.webp",
-            "/balisong-store-state/photos/moab-meridian/moab-meridian-4.webp",
-            "/balisong-store-state/glidr-moab.webp"
+            "/balisong-store-state-HTTP-requests/photos/moab-meridian/moab-meridian.webp",
+            "/balisong-store-state-HTTP-requests/photos/moab-meridian/moab-meridian-3.webp",
+            "/balisong-store-state-HTTP-requests/photos/moab-meridian/moab-meridian-4.webp",
+            "/balisong-store-state-HTTP-requests/glidr-moab.webp"
         ],
         "model": {
             "main": 999
@@ -130,7 +130,7 @@
         "brand": "Squid Industries",
         "price": 750,
         "typeOfKnife": "live blade",
-        "image": "/balisong-store-state/zirblast-tsunami.webp",
+        "image": "/balisong-store-state-HTTP-requests/zirblast-tsunami.webp",
         "materials": [
             "6AL-4V titanium,",
             "CPM S35-VN"
@@ -139,10 +139,10 @@
         "weight": 113,
         "accessories": "stainless steel hardware kit, repair part",
         "photos": [
-            "/balisong-store-state/photos/tsunami-zirblast/tsunami-zirblast.webp",
-            "/balisong-store-state/photos/tsunami-zirblast/tsunami-zirblast-2.webp",
-            "/balisong-store-state/photos/tsunami-zirblast/tsunami-zirblast-3.avif",
-            "/balisong-store-state/photos/tsunami-zirblast/tsunami-zirblast-4.webp"
+            "/balisong-store-state-HTTP-requests/photos/tsunami-zirblast/tsunami-zirblast.webp",
+            "/balisong-store-state-HTTP-requests/photos/tsunami-zirblast/tsunami-zirblast-2.webp",
+            "/balisong-store-state-HTTP-requests/photos/tsunami-zirblast/tsunami-zirblast-3.avif",
+            "/balisong-store-state-HTTP-requests/photos/tsunami-zirblast/tsunami-zirblast-4.webp"
         ],
         "model": {
             "main": 0
@@ -154,7 +154,7 @@
         "brand": "nabalis",
         "price": 50,
         "typeOfKnife": "live blade",
-        "image": "/balisong-store-state/canyon.webp",
+        "image": "/balisong-store-state-HTTP-requests/canyon.webp",
         "materials": [
             "420 Stainless Steel"
         ],
@@ -162,10 +162,10 @@
         "weight": 126,
         "accessories": "new style box and spare hardware kit {2 bushings; 2 pairs of pivot screws; 4 washers; 1 torx screwdriver bit}",
         "photos": [
-            "/balisong-store-state/photos/canyon/canyon.webp",
-            "/balisong-store-state/photos/canyon/canyon-2.webp",
-            "/balisong-store-state/photos/canyon/canyon-3.webp",
-            "/balisong-store-state/photos/canyon/canyon-4.webp"
+            "/balisong-store-state-HTTP-requests/photos/canyon/canyon.webp",
+            "/balisong-store-state-HTTP-requests/photos/canyon/canyon-2.webp",
+            "/balisong-store-state-HTTP-requests/photos/canyon/canyon-3.webp",
+            "/balisong-store-state-HTTP-requests/photos/canyon/canyon-4.webp"
         ],
         "model": {
             "AcidWashBlack": 999,
@@ -178,7 +178,7 @@
         "brand": "BBKS",
         "price": 60,
         "typeOfKnife": "live blade",
-        "image": "/balisong-store-state/apocalypse-vixen.webp",
+        "image": "/balisong-store-state-HTTP-requests/apocalypse-vixen.webp",
         "materials": [
             "7075 Aluminum handles,",
             "stainless steel"
@@ -199,7 +199,7 @@
         "brand": "BBKS",
         "price": 123,
         "typeOfKnife": "live blade",
-        "image": "/balisong-store-state/yuppie.webp",
+        "image": "/balisong-store-state-HTTP-requests/yuppie.webp",
         "materials": [
             "Titanium handles,",
             "5Cr16 steel"
@@ -208,10 +208,10 @@
         "weight": 135,
         "accessories": "Repair kit",
         "photos": [
-            "/balisong-store-state/photos/yuppie-telesto/yuppie-telesto.webp",
-            "/balisong-store-state/photos/yuppie-telesto/yuppie-telesto-2.webp",
-            "/balisong-store-state/photos/yuppie-telesto/yuppie-telesto-3.webp",
-            "/balisong-store-state/photos/yuppie-telesto/yuppie-telesto-4.jpg"
+            "/balisong-store-state-HTTP-requests/photos/yuppie-telesto/yuppie-telesto.webp",
+            "/balisong-store-state-HTTP-requests/photos/yuppie-telesto/yuppie-telesto-2.webp",
+            "/balisong-store-state-HTTP-requests/photos/yuppie-telesto/yuppie-telesto-3.webp",
+            "/balisong-store-state-HTTP-requests/photos/yuppie-telesto/yuppie-telesto-4.jpg"
         ],
         "model": {
             "main": 0
@@ -223,7 +223,7 @@
         "brand": "Squid Industries",
         "price": 470,
         "typeOfKnife": "live blade",
-        "image": "/balisong-store-state/krake-tanto.webp",
+        "image": "/balisong-store-state-HTTP-requests/krake-tanto.webp",
         "materials": [
             "6AL-4V Handles,",
             "titanium,",
@@ -233,10 +233,10 @@
         "weight": 118,
         "accessories": "Repair kit",
         "photos": [
-            "/balisong-store-state/photos/etched-krake-raken/etched-krake-raken.avif",
-            "/balisong-store-state/photos/etched-krake-raken/etched-krake-raken-2.avif",
-            "/balisong-store-state/photos/etched-krake-raken/etched-krake-raken-3.avif",
-            "/balisong-store-state/photos/etched-krake-raken/etched-krake-raken-4.webp"
+            "/balisong-store-state-HTTP-requests/photos/etched-krake-raken/etched-krake-raken.avif",
+            "/balisong-store-state-HTTP-requests/photos/etched-krake-raken/etched-krake-raken-2.avif",
+            "/balisong-store-state-HTTP-requests/photos/etched-krake-raken/etched-krake-raken-3.avif",
+            "/balisong-store-state-HTTP-requests/photos/etched-krake-raken/etched-krake-raken-4.webp"
         ],
         "model": {
             "Teal": 999,
@@ -250,7 +250,7 @@
         "brand": "Squid Industries",
         "price": 670,
         "typeOfKnife": "live blade",
-        "image": "/balisong-store-state/damascus-tanto.webp",
+        "image": "/balisong-store-state-HTTP-requests/damascus-tanto.webp",
         "materials": [
             "6AL-4V Handles,",
             "titanium,",
@@ -260,10 +260,10 @@
         "weight": 122,
         "accessories": "",
         "photos": [
-            "/balisong-store-state/photos/titanium-krake-raken-damascus/titanium-krake-raken.webp",
-            "/balisong-store-state/photos/titanium-krake-raken-damascus/titanium-krake-raken-2.webp",
-            "/balisong-store-state/photos/titanium-krake-raken-damascus/titanium-krake-raken-3.webp",
-            "/balisong-store-state/photos/titanium-krake-raken-damascus/titanium-krake-raken-4.webp"
+            "/balisong-store-state-HTTP-requests/photos/titanium-krake-raken-damascus/titanium-krake-raken.webp",
+            "/balisong-store-state-HTTP-requests/photos/titanium-krake-raken-damascus/titanium-krake-raken-2.webp",
+            "/balisong-store-state-HTTP-requests/photos/titanium-krake-raken-damascus/titanium-krake-raken-3.webp",
+            "/balisong-store-state-HTTP-requests/photos/titanium-krake-raken-damascus/titanium-krake-raken-4.webp"
         ],
         "model": {
             "Tanto": 999
@@ -275,7 +275,7 @@
         "brand": "Squid Industries",
         "price": 265,
         "typeOfKnife": "trainer",
-        "image": "/balisong-store-state/marble-blue-nautilus.webp",
+        "image": "/balisong-store-state-HTTP-requests/marble-blue-nautilus.webp",
         "materials": [
             "7075 T651  Aluminum Alloy, G-10 fiberglass laminate Handles,",
             "Blade Material 410 Heat Treated Stainless Steel"
@@ -284,10 +284,10 @@
         "weight": 122,
         "accessories": "",
         "photos": [
-            "/balisong-store-state/photos/marble-nautilus-trainer/MarbleBlueNautilusISO.webp",
-            "/balisong-store-state/photos/marble-nautilus-trainer/MarbleBlackNautilus.webp",
-            "/balisong-store-state/photos/marble-nautilus-trainer/MarbleSageNautilus.webp",
-            "/balisong-store-state/photos/marble-nautilus-trainer/MarbleSageNautilusISO.webp"
+            "/balisong-store-state-HTTP-requests/photos/marble-nautilus-trainer/MarbleBlueNautilusISO.webp",
+            "/balisong-store-state-HTTP-requests/photos/marble-nautilus-trainer/MarbleBlackNautilus.webp",
+            "/balisong-store-state-HTTP-requests/photos/marble-nautilus-trainer/MarbleSageNautilus.webp",
+            "/balisong-store-state-HTTP-requests/photos/marble-nautilus-trainer/MarbleSageNautilusISO.webp"
         ],
         "model": {
             "Marble Sage": 999,
@@ -301,7 +301,7 @@
         "brand": "LDY Balisong",
         "price": 100,
         "typeOfKnife": "live blade",
-        "image": "/balisong-store-state/orion.webp",
+        "image": "/balisong-store-state-HTTP-requests/orion.webp",
         "materials": [
             "Aluminium"
         ],
@@ -309,10 +309,10 @@
         "weight": 115,
         "accessories": "",
         "photos": [
-            "/balisong-store-state/photos/orion-v2-live/orion-1.webp",
-            "/balisong-store-state/photos/orion-v2-live/orion-2.webp",
-            "/balisong-store-state/photos/orion-v2-live/orion-3.webp",
-            "/balisong-store-state/photos/orion-v2-live/orion-4.webp"
+            "/balisong-store-state-HTTP-requests/photos/orion-v2-live/orion-1.webp",
+            "/balisong-store-state-HTTP-requests/photos/orion-v2-live/orion-2.webp",
+            "/balisong-store-state-HTTP-requests/photos/orion-v2-live/orion-3.webp",
+            "/balisong-store-state-HTTP-requests/photos/orion-v2-live/orion-4.webp"
         ],
         "model": {
             "Black": 999,
@@ -326,7 +326,7 @@
         "brand": "Flytanium",
         "price": 69.95,
         "typeOfKnife": "trainer",
-        "image": "/balisong-store-state/zenith-trainer.webp",
+        "image": "/balisong-store-state-HTTP-requests/zenith-trainer.webp",
         "materials": [
             "7075 Milled Aluminum Handles,",
             "Blade Material: 410 Heat Treated Stainless Steel"
@@ -335,10 +335,10 @@
         "weight": 118,
         "accessories": "Extra Washers and Pivot Hardware in Box, bite edge indicator",
         "photos": [
-            "/balisong-store-state/photos/zenith-trainer/zenith-1.webp",
-            "/balisong-store-state/photos/zenith-trainer/zenith-2.webp",
-            "/balisong-store-state/photos/zenith-trainer/zenith-3.webp",
-            "/balisong-store-state/photos/zenith-trainer/zenith-4.webp"
+            "/balisong-store-state-HTTP-requests/photos/zenith-trainer/zenith-1.webp",
+            "/balisong-store-state-HTTP-requests/photos/zenith-trainer/zenith-2.webp",
+            "/balisong-store-state-HTTP-requests/photos/zenith-trainer/zenith-3.webp",
+            "/balisong-store-state-HTTP-requests/photos/zenith-trainer/zenith-4.webp"
         ],
         "model": {
             "Black": 999,

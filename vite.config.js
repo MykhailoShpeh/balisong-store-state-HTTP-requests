@@ -5,14 +5,14 @@ import path from 'path';
 // https://vite.dev/config/
 // export default defineConfig({
 //   plugins: [react()],
-//   base: '/balisong-store-state/', //! <-- ім'я репозиторію
+//   base: '/balisong-store-state-HTTP-requests/', //! <-- ім'я репозиторію
 // });
 
 
 //todo: https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/balisong-store-state/', //! <-- ім'я репозиторію
+  base: '/balisong-store-state-HTTP-requests/', //! <-- ім'я репозиторію
   //! Налаштування Аліасів для абсолютних шляхів імпортів
   resolve: {
     alias: {
