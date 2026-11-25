@@ -1,59 +1,47 @@
 import React, { Component } from "react";
-
 import { ModalRegistrationIdentification } from '@/components/ModalRegistrationIdentification/ModalRegistrationIdentification.jsx';
-
 import { FormChoiceRegOrInd } from '@/components/FormChoiceRegOrInd/FormChoiceRegOrInd.jsx';
-
 import { FormRegistration } from '@/components/FormRegistration/FormRegistration.jsx';
-
 import { FormIdentification } from '@/components/FormIdentification/FormIdentification.jsx';
-
 import { UserLogInOrReg } from '@/components/UserLogInOrReg/UserLogInOrReg.jsx'
-
 import { Section } from "@/components/Section/Section.jsx";
-
 import { BalisongList } from '@/components/BalisongList/BalisongList.jsx';
-
 import balisongs from '@/json/balisongs.json';
-
 import { Filter } from '@/components/Filter/Filter.jsx';
-
 import { Select } from '@/components/Select/Select.jsx';
-
 import { updateSelectedModels } from '@/utils/updatesSelectedModels.js';
-
 import { Sorter } from '@/components/Sorter/Sorter.jsx';
-
 import { PriceFilter } from '@/components/PriceFilter/PriceFilter.jsx'
-
 import { Sidemenu } from '@/components/Sidemenu/Sidemenu.jsx';
-
 import { Footer } from '@/components/Footer/Footer.jsx';
-
 import { ListSorter } from '@/components/ListSorter/ListSorter.jsx'
-
 import debounce from "lodash.debounce";
-
 import css from './App.module.css';
+
+import {
+  fetchBaliosngs
+} from '@/services'
 
 // //! Сортування, в якому моделі, яких немає в наявності знаходяться в кінці списку
 const arrayYes = balisongs.filter(item => item.photos);
 const arrayNo = balisongs.filter(item => !item.photos);
-// balisongs.splice(0, balisongs.length);
+
 balisongs.length = 0;
 balisongs.push(...arrayYes, ...arrayNo)
+
+const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
 export class App extends Component {
 
   state = {
-    balisongsArray: balisongs, //
+    balisongsArray: [], //
     title: 'Колекція балісонгів', //
     activeButton: "allButton", //
     selectedKnifesIndxs: JSON.parse(localStorage.getItem("selectedKnifesIndxs")) || [], //! масив індексів обраних ножів
     selectedKnifesObjects: (JSON.parse(localStorage.getItem("selectedKnifesIndxs")) || []).flatMap((item) => balisongs.filter((el) => item === el.id)), //! //! масив обраних моделей
     isCartButton: false, //
     selectedKnifesObjectsAfterFiltration: (JSON.parse(localStorage.getItem("selectedKnifesIndxs")) || []).flatMap((item) => balisongs.filter((el) => item === el.id)),
-    balisongsArrayAfterFiltration: balisongs, //
+    balisongsArrayAfterFiltration: [], //
     searchInputValue: "", //! значення пошукового інпуту
     radioButtonValue: "name", //! значення параметра для пошуку/фільтрації радіо-кнопки
     inputSearchPlaceholder: "Введіть назву ножа", //! значення placeholder для inputSearch
@@ -65,7 +53,34 @@ export class App extends Component {
     activeUser: null, //! 🗣 активний (авторизований) користувач
     activeUserId: null, //! #️⃣🗣 індекс Активного (авторизованого) користувача 
     theme: "light", //* значення теми сайту
+    loader: false,
   }
+
+  //? функція для завантаження ножів та користувачів
+  getBalisongs = async () => {
+    this.setState({
+      loader: true,
+    })
+    try {
+      const balisongs = await fetchBaliosngs();
+
+      console.log("balisongs🗡️:", balisongs);
+
+      await delay(1000); //? затримка завантаження
+
+      this.setState({
+        balisongsArray: balisongs,
+        balisongsArrayAfterFiltration: balisongs,
+        loader: false,
+      })
+    } catch (error) {
+      console.error(error);
+
+      this.setState({
+        loader: false,
+      })
+    }
+  };
 
   //!  метод, який відбувається зразу після монтування
   componentDidMount() {
@@ -90,6 +105,8 @@ export class App extends Component {
       : users.findIndex(user => user.isActive === true)
 
     console.log("activeUserId: ", activeUserId)
+
+    this.getBalisongs()
 
     this.setState({
       activeUser,
@@ -513,8 +530,10 @@ export class App extends Component {
       onlyInputSearchValue,
       showModal,
       modalType,
-      activeUser, 
-      theme
+      activeUser,
+      theme,
+      loader,
+
     } = this.state; //! деструктуризація, замість this.state.expample пишемо examp;e
 
     //! Рахуємо загальну кількість моделей <totalModels> виходячи з наявності фактичної ціни
@@ -549,76 +568,76 @@ export class App extends Component {
 
     return (
       <>
-      <div data-theme={theme}>
-        {
-          showModal &&
-          <ModalRegistrationIdentification
-            onClose={this.toggleModal}
-          >
-            {!modalType &&
-              <FormChoiceRegOrInd onClose={this.toggleModal} />
-            }
+        <div data-theme={theme}>
+          {
+            showModal &&
+            <ModalRegistrationIdentification
+              onClose={this.toggleModal}
+            >
+              {!modalType &&
+                <FormChoiceRegOrInd onClose={this.toggleModal} />
+              }
 
-            {modalType == "Registration" &&
-              <FormRegistration onClose={this.toggleModal} onSubmit={this.handleSubmit} />
-            }
+              {modalType == "Registration" &&
+                <FormRegistration onClose={this.toggleModal} onSubmit={this.handleSubmit} />
+              }
 
-            {modalType == "Login" &&
-              <FormIdentification onClose={this.toggleModal} onAccountLogin={this.handleLogIn} />
-            }
-          </ModalRegistrationIdentification>
-        }
-        <Filter
-          onAll={this.allFiltration}
-          onSafeBlade={this.safeBladeFiltration}
-          onLiveBlade={this.liveBladeFiltration}
-          onCart={this.cartFiltration}
-          selectedLength={selectedKnifesIndxs.length}
-          activeButton={activeButton}
-          theme={theme}
-          onToggleTheme={this.toggleTheme}
-        >
-          <UserLogInOrReg
-            onClose={this.toggleModal}
-            activeUser={activeUser}
-            onSignOut={this.handleSignOut}
-          />
-        </Filter>
-
-        <Section
-          title={this.state.title}
-          selectedKnifesObjects={selectedKnifesObjects}
-          isCartButton={isCartButton}
-          totalTypes={totalTypes}
-          totalModels={totalModels}
-          searchInputValue={searchInputValue}
-          select={<Select onGetmanufactor={this.getmanufactor} />}
-          sorter={
-            <Sorter
-              onHandleChangeInputSearchValue={this.handleChangeInputSearchValue}
-              searchInputValue={searchInputValue}
-              onHandleChangeRadioButtonValue={this.handleChangeRadioButtonValue}
-              radioButtonValue={radioButtonValue} //! значення параметра для пошуку/фільтрації радіо-кнопки
-              inputSearchPlaceholder={inputSearchPlaceholder}
-            />
+              {modalType == "Login" &&
+                <FormIdentification onClose={this.toggleModal} onAccountLogin={this.handleLogIn} />
+              }
+            </ModalRegistrationIdentification>
           }
-          priceFilter={<PriceFilter 
-            balisongs={balisongsArrayAfterFiltration}
-            onFilteredProducts={this.setFilteredProducts}
-            />}
-        >
-          <BalisongList
-            items={isCartButton ? selectedKnifesObjects : balisongsArray}
-            onActive={this.ActiveButton}
-            selectedKnifesIndxs={selectedKnifesIndxs}
-            totalTypes={totalTypes}
-            activeUser={activeUser}
-
+          <Filter
+            onAll={this.allFiltration}
+            onSafeBlade={this.safeBladeFiltration}
+            onLiveBlade={this.liveBladeFiltration}
+            onCart={this.cartFiltration}
+            selectedLength={selectedKnifesIndxs.length}
+            activeButton={activeButton}
+            theme={theme}
+            onToggleTheme={this.toggleTheme}
           >
-            <ListSorter handleSort={this.handleChangeSortSelect} />
-          </BalisongList>
-        </Section>
-        <Footer />
+            <UserLogInOrReg
+              onClose={this.toggleModal}
+              activeUser={activeUser}
+              onSignOut={this.handleSignOut}
+            />
+          </Filter>
+
+          <Section
+            title={this.state.title}
+            selectedKnifesObjects={selectedKnifesObjects}
+            isCartButton={isCartButton}
+            totalTypes={totalTypes}
+            totalModels={totalModels}
+            searchInputValue={searchInputValue}
+            select={<Select onGetmanufactor={this.getmanufactor} />}
+            sorter={
+              <Sorter
+                onHandleChangeInputSearchValue={this.handleChangeInputSearchValue}
+                searchInputValue={searchInputValue}
+                onHandleChangeRadioButtonValue={this.handleChangeRadioButtonValue}
+                radioButtonValue={radioButtonValue} //! значення параметра для пошуку/фільтрації радіо-кнопки
+                inputSearchPlaceholder={inputSearchPlaceholder}
+              />
+            }
+            priceFilter={<PriceFilter
+              balisongs={balisongsArrayAfterFiltration}
+              onFilteredProducts={this.setFilteredProducts}
+            />}
+          >
+            <BalisongList
+              items={isCartButton ? selectedKnifesObjects : balisongsArray}
+              onActive={this.ActiveButton}
+              selectedKnifesIndxs={selectedKnifesIndxs}
+              totalTypes={totalTypes}
+              activeUser={activeUser}
+              loader={loader}
+            >
+              <ListSorter handleSort={this.handleChangeSortSelect} />
+            </BalisongList>
+          </Section>
+          <Footer />
         </div>
       </>
     )

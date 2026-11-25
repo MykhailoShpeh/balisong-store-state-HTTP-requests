@@ -4,7 +4,7 @@ import { Balisong } from '@/components/Balisong/Balisong.jsx';
 
 import css from './BalisongList.module.css';
 
-import {List, Card} from './BalisongList.styled.jsx'
+import { List, Card } from './BalisongList.styled.jsx'
 
 export function BalisongList({
     items,
@@ -12,38 +12,41 @@ export function BalisongList({
     selectedKnifesIndxs,
     totalTypes,
     activeUser,
-    children
+    children,
+    loader
 }) {
     return (
         <>
             {
-                totalTypes == 0
+                totalTypes == 0 && !loader
                     ? <h3 className={css.searchTitle}>Нічого не знайдено... 😔</h3>
-                    :  <ul className={css.list}>
-                        {children}
-            {items.map
-                ((item, index) =>
-                    <li className={css.card} key={item.id}>
-                        <Balisong
-                            id={item.id}
-                            index={index}
-                            nameOfKnife={item.nameOfKnife}
-                            brand={item.brand}
-                            price={item.price}
-                            typeOfKnife={item.typeOfKnife}
-                            image={item.image}
-                            materials={item.materials}
-                            link={item.link}
-                            weight={item.weight}
-                            accessories={item.accessories}
-                            additionalPhotos={item.photos}
-                            onActive={onActive}
-                            selectedKnifesIndxs={selectedKnifesIndxs}
-                            activeUser={activeUser}
-                        />
-                    </li>
-                )}
-            </ul>
+                    : loader
+                        ? <h3 className={css.searchTitle}>Елементи завантажуються</h3>
+                        : <ul className={css.list}>
+                            {children}
+                            {items.map
+                                ((item, index) =>
+                                    <li className={css.card} key={item.id}>
+                                        <Balisong
+                                            id={item.id}
+                                            index={index}
+                                            nameOfKnife={item.nameOfKnife}
+                                            brand={item.brand}
+                                            price={item.price}
+                                            typeOfKnife={item.typeOfKnife}
+                                            image={item.image}
+                                            materials={item.materials}
+                                            link={item.link}
+                                            weight={item.weight}
+                                            accessories={item.accessories}
+                                            additionalPhotos={item.photos}
+                                            onActive={onActive}
+                                            selectedKnifesIndxs={selectedKnifesIndxs}
+                                            activeUser={activeUser}
+                                        />
+                                    </li>
+                                )}
+                        </ul>
             }
         </>
     )

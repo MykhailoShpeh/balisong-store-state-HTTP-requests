@@ -13,7 +13,8 @@ export function Section({
     searchInputValue,
     select,
     sorter,
-    priceFilter
+    priceFilter,
+    
 }) {
     return (
         selectedKnifesObjects.length == 0 && searchInputValue === "" && isCartButton ? <h1 className={css.nullTitle}>Додайте товар до кошику</h1> :
